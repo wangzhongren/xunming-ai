@@ -2,6 +2,7 @@
   "name": "xunming-ai",
   "version": "1.0.0",
   "description": "基于刑名之学与三权分立架构的极高准确性 AI 协同系统",
+  "license": "Apache-2.0",
   "main": "src/main/main.js",
   "scripts": {
     "start": "electron .",

@@ -120,4 +120,4 @@ This is an experimental local-first AI agent workbench. It is useful for explori
 
 ## License
 
-No license has been selected yet. Add a license before publishing if you want others to use, modify, or redistribute this project under explicit open-source terms.
+Licensed under the Apache License, Version 2.0. See `LICENSE` for details.
