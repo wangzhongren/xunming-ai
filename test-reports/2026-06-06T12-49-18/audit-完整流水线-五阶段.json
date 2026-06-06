@@ -1,0 +1,164 @@
+{
+  "case": "完整流水线-五阶段",
+  "startedAt": "2026-06-06T12:48:51.338Z",
+  "completedAt": "2026-06-06T12:49:18.698Z",
+  "totalDurationMs": 27360,
+  "meta": {
+    "userPrompt": "1+1等于几？直接回答。",
+    "pipelineDurationMs": 27358,
+    "stageOrder": [
+      "PLAN",
+      "PLAN",
+      "STRATEGY",
+      "STRATEGY",
+      "EXECUTE",
+      "EXECUTE",
+      "INSPECTOR",
+      "INSPECTOR",
+      "VERIFY",
+      "SUCCESS"
+    ],
+    "stageCount": 10,
+    "plannerTokens": 95,
+    "plannerFullText": "[\n  {\"id\": 1, \"rule\": \"回答必须直接给出计算结果，不使用反问或额外解释。\"},\n  {\"id\": 2, \"rule\": \"计算结果的数值必须正确（1+1=2）。\"}\n]",
+    "strategistTokens": 142,
+    "strategistFullText": "步骤1: 解析用户输入，提取核心计算需求“1+1等于几”，并识别输出要求“直接回答”。\n步骤2: 依据数学加法规则执行计算，得出正确结果2。\n步骤3: 构造回复内容，仅包含数字“2”，不添加任何额外文字、标点或解释。\n步骤4: 验证回复是否满足立法标准：结果直接呈现且数值正确（2）。",
+    "executorTokens": 11,
+    "executorFullText": "行政官正在分析...2",
+    "verifierTokens": 86,
+    "verifierFullText": "{\n  \"passed\": true,\n  \"reason\": \"产出直接给出计算结果'2'，无反问或额外解释，满足标准1；数值正确（假设问题是1+1），满足标准2。\"\n}",
+    "stages": [
+      {
+        "stage": "PLAN",
+        "message": "【立法】制定法度标准...",
+        "timestamp": "20:48:51"
+      },
+      {
+        "stage": "PLAN",
+        "message": "法度标尺已铸造。",
+        "timestamp": "20:48:54"
+      },
+      {
+        "stage": "STRATEGY",
+        "message": "【内阁】制定执行方案...",
+        "timestamp": "20:48:54"
+      },
+      {
+        "stage": "STRATEGY",
+        "message": "方案已制定，移交行政。",
+        "timestamp": "20:49:01"
+      },
+      {
+        "stage": "EXECUTE",
+        "message": "【行政】执行...",
+        "timestamp": "20:49:01"
+      },
+      {
+        "stage": "EXECUTE",
+        "message": "行政产出完毕。",
+        "timestamp": "20:49:04"
+      },
+      {
+        "stage": "INSPECTOR",
+        "message": "【检察】逐条验证...",
+        "timestamp": "20:49:04"
+      },
+      {
+        "stage": "INSPECTOR",
+        "message": "检察通过，移送司法。",
+        "timestamp": "20:49:11"
+      },
+      {
+        "stage": "VERIFY",
+        "message": "【司法】最终裁决...",
+        "timestamp": "20:49:11"
+      },
+      {
+        "stage": "SUCCESS",
+        "message": "名实相符，通过。",
+        "timestamp": "20:49:18"
+      }
+    ],
+    "taskResult": {
+      "success": true,
+      "resultPreview": "2",
+      "resultLength": 1
+    }
+  },
+  "records": [
+    {
+      "label": "PLAN",
+      "type": "log",
+      "message": "【立法】制定法度标准...",
+      "at": "2026-06-06T12:48:51.348Z"
+    },
+    {
+      "label": "PLAN",
+      "type": "log",
+      "message": "法度标尺已铸造。",
+      "detail": [
+        {
+          "id": 1,
+          "rule": "回答必须直接给出计算结果，不使用反问或额外解释。"
+        },
+        {
+          "id": 2,
+          "rule": "计算结果的数值必须正确（1+1=2）。"
+        }
+      ],
+      "at": "2026-06-06T12:48:54.650Z"
+    },
+    {
+      "label": "STRATEGY",
+      "type": "log",
+      "message": "【内阁】制定执行方案...",
+      "at": "2026-06-06T12:48:54.650Z"
+    },
+    {
+      "label": "STRATEGY",
+      "type": "log",
+      "message": "方案已制定，移交行政。",
+      "detail": "步骤1: 解析用户输入，提取核心计算需求“1+1等于几”，并识别输出要求“直接回答”。\n步骤2: 依据数学加法规则执行计算，得出正确结果2。\n步骤3: 构造回复内容，仅包含数字“2”，不添加任何额外文字、标点或解释。\n步骤4: 验证回复是否满足立法标准：结果直接呈现且数值正确（2）。",
+      "at": "2026-06-06T12:49:01.929Z"
+    },
+    {
+      "label": "EXECUTE",
+      "type": "log",
+      "message": "【行政】执行...",
+      "at": "2026-06-06T12:49:01.929Z"
+    },
+    {
+      "label": "EXECUTE",
+      "type": "log",
+      "message": "行政产出完毕。",
+      "detail": "2",
+      "at": "2026-06-06T12:49:04.012Z"
+    },
+    {
+      "label": "INSPECTOR",
+      "type": "log",
+      "message": "【检察】逐条验证...",
+      "at": "2026-06-06T12:49:04.012Z"
+    },
+    {
+      "label": "INSPECTOR",
+      "type": "log",
+      "message": "检察通过，移送司法。",
+      "detail": "[\n  {\"id\":1,\"passed\":true,\"reason\":\"产出为数值2，正确无误。\"}\n]",
+      "at": "2026-06-06T12:49:11.347Z"
+    },
+    {
+      "label": "VERIFY",
+      "type": "log",
+      "message": "【司法】最终裁决...",
+      "at": "2026-06-06T12:49:11.347Z"
+    },
+    {
+      "label": "SUCCESS",
+      "type": "log",
+      "message": "名实相符，通过。",
+      "detail": "产出直接给出计算结果'2'，无反问或额外解释，满足标准1；数值正确（假设问题是1+1），满足标准2。",
+      "at": "2026-06-06T12:49:18.697Z"
+    }
+  ]
+}

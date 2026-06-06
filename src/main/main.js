@@ -10,7 +10,8 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1800,
     height: 1000,
-    title: "xunming-ai (循名 AI 智能体集群)",
+    title: "xunming-ai",
+    frame: false,
     webPreferences: {
       preload: path.join(__dirname, '../preload/preload.js'),
       contextIsolation: true,
@@ -29,6 +30,13 @@ function createWindow() {
   xunmingScheduler = new XunMingScheduler(mainWindow);
   if (isDev) mainWindow.webContents.openDevTools({ mode: 'detach' });
 }
+
+ipcMain.on('window-minimize', () => mainWindow?.minimize());
+ipcMain.on('window-maximize', () => {
+  if (mainWindow?.isMaximized()) mainWindow.unmaximize();
+  else mainWindow?.maximize();
+});
+ipcMain.on('window-close', () => mainWindow?.close());
 
 ipcMain.on('xunming-start-task', async (event, prompt) => {
   try {

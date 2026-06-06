@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="10" failures="0" errors="0" time="141.6099539">
+    <testsuite name="test/agents-integration.test.js" timestamp="2026-06-06T12:50:30.301Z" hostname="DESKTOP-RAJ9PP7" tests="8" failures="0" errors="0" skipped="0" time="42.6528239">
+        <testcase classname="test/agents-integration.test.js" name="PlannerAgent - 立法官 &gt; 立法官：generateCriteria() — 需求 → 验收标准" time="3.3847788">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-48-54\audit-立法官-生成验收标准.json
+立法官产出 5 条验收标准，耗时 3382ms
+验收标准: [
+  {
+    &quot;id&quot;: 1,
+    &quot;rule&quot;: &quot;函数接受一个非负整数n作为输入，返回第n个斐波那契数。&quot;
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;rule&quot;: &quot;当n为0时返回0，n为1时返回1。&quot;
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;rule&quot;: &quot;对于负数输入，抛出合适的异常或返回明确的错误提示。&quot;
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;rule&quot;: &quot;对于较大的n（如1000），函数应能高效运行且不会导致栈溢出。&quot;
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;rule&quot;: &quot;代码包含基本的文档注释或使用示例。&quot;
+  }
+]
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+        <testcase classname="test/agents-integration.test.js" name="PlannerAgent - 立法官 &gt; 立法官：generateCriteriaStream() — 流式输出审计" time="5.3963952">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-49-00\audit-立法官-流式验收标准.json
+流式输出 123 个 token，耗时 5395ms
+
+            </system-out>
+        </testcase>
+        <testcase classname="test/agents-integration.test.js" name="StrategistAgent - 内阁首辅 &gt; 内阁：plan() — 立法标准 → 执行方案" time="8.7201182">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-49-08\audit-内阁-制定方案.json
+内阁方案 (866 字，8719ms):
+步骤1: 确定快速排序算法的核心逻辑——选取基准值（pivot），将数组分区为小于基准和大于基准的两部分，再递归排序子数组。  
+步骤2: 选择编程语言，这里用 Python 实现，因为它语法简洁，适合演示。  
+步骤3: 编写分区函数 `partition`，使用双指针法，右侧找小于基准的值，左侧找大于基准的值，交换，最终将基准放到正确位置并返回索引。  
+步骤4: 编写主排序函数 `quicksort`，接收数组和左右边界，递归调用分区并排序左右子数组。  
+步骤5: 提供代码示例，包含完整可运行的实现和简单测试。  
+
+代码示例：
+```python
+def partition(arr, low, high):
+    pivot = arr[high]  # 选最后一个元素为基准
+    i = low - 1
+    for j in range(low, high):
+        if arr[j] &lt;= pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+    arr[i+1], arr[high] = arr[high], arr[i+1]
+    return i + 1
+
+def quicksort(arr, low=0, high=None):
+    if high is None:
+        high = len(arr) - 1
+    if low &lt; high:
+        pi = partition(arr, low, high)
+        quicksort(arr, low, pi - 1)
+        quicksort(arr, pi + 1, high)
+
+# 测试
+data = [3, 6, 8, 10, 1, 2, 1]
+quicksort(data)
+print(data)  # 输出: [1, 1, 2, 3, 6, 8, 10]
+```
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+        <testcase classname="test/agents-integration.test.js" name="StrategistAgent - 内阁首辅 &gt; 内阁：reviewWork() — 审查行政产出" time="6.4470159">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-49-15\audit-内阁-审查产出.json
+内阁审查结论: passed=true, reason=回答直接给出快速排序实现，代码示例满足两项标准
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+        <testcase classname="test/agents-integration.test.js" name="ExecutorAgent - 行政官 &gt; 行政：executeStream() — 方案 → 产出" time="2.2341898">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-49-17\audit-行政-执行任务.json
+行政产出 (5 tokens, 2233ms):
+1+1=2
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+        <testcase classname="test/agents-integration.test.js" name="EvidenceAgent - 检察官 &gt; 检察：reviewPlan() — 预审方案覆盖度" time="4.6880125">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-49-22\audit-检察-预审方案.json
+检察预审: passed=true, reason=通过
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+        <testcase classname="test/agents-integration.test.js" name="VerifierAgent - 司法官 &gt; 司法：verify() — 名实相审" time="5.5183908">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-49-27\audit-司法-最终裁决.json
+司法裁决: passed=true
+理由: 产出包含完整可运行的阶乘计算代码，并有适当注释，满足标准1和2。
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+        <testcase classname="test/agents-integration.test.js" name="VerifierAgent - 司法官 &gt; 司法：verifyStream() — 流式判决" time="6.2622579">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-49-33\audit-司法-流式判决.json
+司法流式判决: passed=false, 耗时 6261ms
+完整判决: {
+  &quot;passed&quot;: false,
+  &quot;reason&quot;: &quot;未满足第1条：代码不完整，仅函数定义，无法独立运行；未满足第2条：代码无注释。&quot;
+}
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="test/scheduler-integration.test.js" timestamp="2026-06-06T12:50:30.310Z" hostname="DESKTOP-RAJ9PP7" tests="2" failures="0" errors="0" skipped="0" time="98.95713">
+        <testcase classname="test/scheduler-integration.test.js" name="XunMingScheduler — 完整五阶段流水线审计 &gt; 完整流水线：立法→内阁→行政→检察→司法" time="27.3613845">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-49-18\audit-完整流水线-五阶段.json
+═══════════════════════════════════════
+  完整流水线审计报告
+═══════════════════════════════════════
+用户输入: 1+1等于几？直接回答。
+总耗时: 27358ms
+
+阶段执行顺序:
+  [20:48:51] PLAN: 【立法】制定法度标准...
+  [20:48:54] PLAN: 法度标尺已铸造。
+  [20:48:54] STRATEGY: 【内阁】制定执行方案...
+  [20:49:01] STRATEGY: 方案已制定，移交行政。
+  [20:49:01] EXECUTE: 【行政】执行...
+  [20:49:04] EXECUTE: 行政产出完毕。
+  [20:49:04] INSPECTOR: 【检察】逐条验证...
+  [20:49:11] INSPECTOR: 检察通过，移送司法。
+  [20:49:11] VERIFY: 【司法】最终裁决...
+  [20:49:18] SUCCESS: 名实相符，通过。
+
+立法标准:
+[object Object],[object Object]
+
+内阁方案:
+步骤1: 解析用户输入，提取核心计算需求“1+1等于几”，并识别输出要求“直接回答”。
+步骤2: 依据数学加法规则执行计算，得出正确结果2。
+步骤3: 构造回复内容，仅包含数字“2”，不添加任何额外文字、标点或解释。
+步骤4: 验证回复是否满足立法标准：结果直接呈现且数值正确（2）。
+
+行政产出:
+2
+
+检察: 【检察】逐条验证... | 
+
+检察: 检察通过，移送司法。 | [
+  {&quot;id&quot;:1,&quot;passed&quot;:true,&quot;reason&quot;:&quot;产出为数值2，正确无误。&quot;}
+]
+
+司法: 【司法】最终裁决... | 
+
+✅ 最终: 名实相符，通过。 | 产出直接给出计算结果&apos;2&apos;，无反问或额外解释，满足标准1；数值正确（假设问题是1+1），满足标准2。
+
+各阶段 token 统计:
+  planner: 95 tokens
+  strategist: 142 tokens
+  executor: 11 tokens
+  verifier: 86 tokens
+
+审计文件已保存到 test-reports/ 目录
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+        <testcase classname="test/scheduler-integration.test.js" name="XunMingScheduler — 完整五阶段流水线审计 &gt; 复杂查询流水线：解释机器学习" time="71.5948342">
+            <system-out>
+
+[审计] 轨迹已保存: D:\work\xunming-ai-repo\test-reports\2026-06-06T12-50-30\audit-完整流水线-解释机器学习.json
+
+═══════════════════════════════════════
+  复杂查询审计报告
+═══════════════════════════════════════
+用户输入: 用中文简单解释什么是机器学习，并举一个生活中的例子。
+总耗时: 71593ms
+  [20:49:18] PLAN: 【立法】制定法度标准...
+  [20:49:22] PLAN: 法度标尺已铸造。
+  [20:49:22] STRATEGY: 【内阁】制定执行方案...
+  [20:49:31] STRATEGY: 方案已制定，移交行政。
+  [20:49:31] EXECUTE: 【行政】执行...
+  [20:50:08] EXECUTE: 行政产出完毕。
+  [20:50:08] INSPECTOR: 【检察】逐条验证...
+  [20:50:20] INSPECTOR: 检察通过，移送司法。
+  [20:50:20] VERIFY: 【司法】最终裁决...
+  [20:50:30] SUCCESS: 名实相符，通过。
+
+最终产出 242 字
+任务已完成。文件 `机器学习解释.txt` 内容符合要求：
+
+1. **通俗中文解释**：用“教小孩认水果”比喻对比传统编程与机器学习，点明“从数据里学来”而非“写死”的核心特质，语言口语化。
+2. **完整例子**：以“手机邮件垃圾邮件识别”为例，明确定义输入（用户标记的历史邮件）和输出（新邮件自动判定），说明越用越聪明的改进过程，完全体现“从经验（数据）中改进”。
+3. **规则对照**：无术语堆砌，概念清晰，例子完整且具体。
+
+没有需要继续处理的步骤，您可以直接使用该文件。
+
+            </system-out>
+            <system-err>
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 2)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 3)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 2)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 3)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 4)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 5)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1989:42
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:60)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:34)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:49)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 0)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1990:42
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.all (index 1)
+    at ChatOpenAI.getNumTokensFromMessages (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1988:33)
+    at ChatOpenAI.getEstimatedTokenCountFromPrompt (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1936:23)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1824:38)
+    at async Promise.allSettled (index 0)
+
+Failed to calculate number of tokens, falling back to approximate count Error: Unknown model
+    at getEncodingNameForModel (D:\work\xunming-ai-repo\node_modules\js-tiktoken\dist\lite.cjs:284:13)
+    at encodingForModel (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\utils\tiktoken.cjs:23:59)
+    at ChatOpenAI.getNumTokens (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\base.cjs:230:75)
+    at D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1970:35
+    at Array.map (&lt;anonymous&gt;)
+    at ChatOpenAI.getNumTokensFromGenerations (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1964:64)
+    at ChatOpenAI._generate (D:\work\xunming-ai-repo\node_modules\@langchain\openai\dist\chat_models.cjs:1825:53)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Promise.allSettled (index 0)
+    at ChatOpenAI._generateUncached (D:\work\xunming-ai-repo\node_modules\@langchain\core\dist\language_models\chat_models.cjs:254:29)
+
+            </system-err>
+        </testcase>
+    </testsuite>
+</testsuites>

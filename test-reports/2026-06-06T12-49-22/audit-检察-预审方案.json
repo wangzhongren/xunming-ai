@@ -1,0 +1,45 @@
+{
+  "case": "检察-预审方案",
+  "startedAt": "2026-06-06T12:49:17.525Z",
+  "completedAt": "2026-06-06T12:49:22.213Z",
+  "totalDurationMs": 4688,
+  "meta": {
+    "criteria": [
+      {
+        "id": 1,
+        "rule": "代码必须能运行"
+      },
+      {
+        "id": 2,
+        "rule": "必须处理空输入"
+      }
+    ]
+  },
+  "records": [
+    {
+      "label": "检察官预审方案",
+      "agent": "EvidenceAgent.reviewPlan",
+      "mode": "invoke",
+      "input": {
+        "criteria": [
+          {
+            "id": 1,
+            "rule": "代码必须能运行"
+          },
+          {
+            "id": 2,
+            "rule": "必须处理空输入"
+          }
+        ],
+        "plan": "步骤1: 分析需求→步骤2: 定义函数签名含类型注解→步骤3: 处理空输入返回[]→步骤4: 实现核心算法→步骤5: 编写测试"
+      },
+      "startedAt": "2026-06-06T12:49:17.525Z",
+      "durationMs": 4687,
+      "output": {
+        "passed": true,
+        "reason": "通过"
+      },
+      "success": true
+    }
+  ]
+}

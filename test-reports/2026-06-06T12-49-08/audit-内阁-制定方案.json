@@ -1,0 +1,43 @@
+{
+  "case": "内阁-制定方案",
+  "startedAt": "2026-06-06T12:49:00.123Z",
+  "completedAt": "2026-06-06T12:49:08.843Z",
+  "totalDurationMs": 8720,
+  "meta": {
+    "userPrompt": "写一个快速排序",
+    "criteria": [
+      {
+        "id": 1,
+        "rule": "回答必须直接且简洁"
+      },
+      {
+        "id": 2,
+        "rule": "必须包含一个代码示例"
+      }
+    ]
+  },
+  "records": [
+    {
+      "label": "内阁制定执行方案",
+      "agent": "StrategistAgent",
+      "mode": "invoke",
+      "input": {
+        "userPrompt": "写一个快速排序",
+        "criteria": [
+          {
+            "id": 1,
+            "rule": "回答必须直接且简洁"
+          },
+          {
+            "id": 2,
+            "rule": "必须包含一个代码示例"
+          }
+        ]
+      },
+      "startedAt": "2026-06-06T12:49:00.124Z",
+      "durationMs": 8719,
+      "output": "步骤1: 确定快速排序算法的核心逻辑——选取基准值（pivot），将数组分区为小于基准和大于基准的两部分，再递归排序子数组。  \n步骤2: 选择编程语言，这里用 Python 实现，因为它语法简洁，适合演示。  \n步骤3: 编写分区函数 `partition`，使用双指针法，右侧找小于基准的值，左侧找大于基准的值，交换，最终将基准放到正确位置并返回索引。  \n步骤4: 编写主排序函数 `quicksort`，接收数组和左右边界，递归调用分区并排序左右子数组。  \n步骤5: 提供代码示例，包含完整可运行的实现和简单测试。  \n\n代码示例：\n```python\ndef partition(arr, low, high):\n    pivot = arr[high]  # 选最后一个元素为基准\n    i = low - 1\n    for j in range(low, high):\n        if arr[j] <= pivot:\n            i += 1\n            arr[i], arr[j] = arr[j], arr[i]\n    arr[i+1], arr[high] = arr[high], arr[i+1]\n    return i + 1\n\ndef quicksort(arr, low=0, high=None):\n    if high is None:\n        high = len(arr) - 1\n    if low < high:\n        pi = partition(arr, low, high)\n        quicksort(arr, low, pi - 1)\n        quicksort(arr, pi + 1, high)\n\n# 测试\ndata = [3, 6, 8, 10, 1, 2, 1]\nquicksort(data)\nprint(data)  # 输出: [1, 1, 2, 3, 6, 8, 10]\n```",
+      "success": true
+    }
+  ]
+}

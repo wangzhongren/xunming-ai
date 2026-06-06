@@ -1,0 +1,45 @@
+{
+  "case": "立法官-生成验收标准",
+  "startedAt": "2026-06-06T12:48:51.343Z",
+  "completedAt": "2026-06-06T12:48:54.725Z",
+  "totalDurationMs": 3382,
+  "meta": {
+    "userPrompt": "写一个计算斐波那契数列的Python函数，要求处理边界条件",
+    "agent": "PlannerAgent (立法官)"
+  },
+  "records": [
+    {
+      "label": "立法官制定法度",
+      "agent": "PlannerAgent",
+      "mode": "invoke",
+      "input": {
+        "prompt": "写一个计算斐波那契数列的Python函数，要求处理边界条件"
+      },
+      "startedAt": "2026-06-06T12:48:51.343Z",
+      "durationMs": 3382,
+      "output": [
+        {
+          "id": 1,
+          "rule": "函数接受一个非负整数n作为输入，返回第n个斐波那契数。"
+        },
+        {
+          "id": 2,
+          "rule": "当n为0时返回0，n为1时返回1。"
+        },
+        {
+          "id": 3,
+          "rule": "对于负数输入，抛出合适的异常或返回明确的错误提示。"
+        },
+        {
+          "id": 4,
+          "rule": "对于较大的n（如1000），函数应能高效运行且不会导致栈溢出。"
+        },
+        {
+          "id": 5,
+          "rule": "代码包含基本的文档注释或使用示例。"
+        }
+      ],
+      "success": true
+    }
+  ]
+}

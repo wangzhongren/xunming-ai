@@ -1,0 +1,46 @@
+{
+  "case": "司法-最终裁决",
+  "startedAt": "2026-06-06T12:49:22.213Z",
+  "completedAt": "2026-06-06T12:49:27.731Z",
+  "totalDurationMs": 5518,
+  "meta": {
+    "criteria": [
+      {
+        "id": 1,
+        "rule": "输出必须包含完整可运行的代码"
+      },
+      {
+        "id": 2,
+        "rule": "代码必须有适当的注释"
+      }
+    ],
+    "executorOutput": "# 计算阶乘\n# 输入: 正整数 n\n# 输出: n!\ndef factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n\nprint(factorial(5))  # 120"
+  },
+  "records": [
+    {
+      "label": "司法官审合刑名",
+      "agent": "VerifierAgent",
+      "mode": "invoke",
+      "input": {
+        "criteria": [
+          {
+            "id": 1,
+            "rule": "输出必须包含完整可运行的代码"
+          },
+          {
+            "id": 2,
+            "rule": "代码必须有适当的注释"
+          }
+        ],
+        "output": "# 计算阶乘\n# 输入: 正整数 n\n# 输出: n!\ndef factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n\nprint(factorial(5))  # 120"
+      },
+      "startedAt": "2026-06-06T12:49:22.213Z",
+      "durationMs": 5518,
+      "output": {
+        "passed": true,
+        "reason": "产出包含完整可运行的阶乘计算代码，并有适当注释，满足标准1和2。"
+      },
+      "success": true
+    }
+  ]
+}

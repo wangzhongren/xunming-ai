@@ -1,0 +1,43 @@
+{
+  "case": "行政-执行任务",
+  "startedAt": "2026-06-06T12:49:15.291Z",
+  "completedAt": "2026-06-06T12:49:17.524Z",
+  "totalDurationMs": 2233,
+  "meta": {
+    "task": "1+1等于几？直接回答。",
+    "totalTokens": 5,
+    "toolCalls": 0
+  },
+  "records": [
+    {
+      "label": "行政官执行任务",
+      "agent": "ExecutorAgent",
+      "mode": "stream",
+      "input": {
+        "task": "1+1等于几？直接回答。",
+        "criteria": [
+          {
+            "id": 1,
+            "rule": "直接回答问题，不使用任何工具"
+          }
+        ],
+        "plan": "步骤1: 直接回答"
+      },
+      "startedAt": "2026-06-06T12:49:15.291Z",
+      "tokens": [
+        "1",
+        "+",
+        "1",
+        "=",
+        "2"
+      ],
+      "finalOutput": "1+1=2",
+      "statusMessages": [
+        "行政官正在分析..."
+      ],
+      "durationMs": 2233,
+      "fullText": "1+1=2",
+      "success": true
+    }
+  ]
+}

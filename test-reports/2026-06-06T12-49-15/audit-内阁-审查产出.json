@@ -1,0 +1,46 @@
+{
+  "case": "内阁-审查产出",
+  "startedAt": "2026-06-06T12:49:08.844Z",
+  "completedAt": "2026-06-06T12:49:15.290Z",
+  "totalDurationMs": 6446,
+  "meta": {
+    "criteria": [
+      {
+        "id": 1,
+        "rule": "回答必须直接且简洁"
+      },
+      {
+        "id": 2,
+        "rule": "必须包含一个代码示例"
+      }
+    ],
+    "executorOutputLength": 256
+  },
+  "records": [
+    {
+      "label": "内阁审查行政产出",
+      "agent": "StrategistAgent.reviewWork",
+      "mode": "invoke",
+      "input": {
+        "criteria": [
+          {
+            "id": 1,
+            "rule": "回答必须直接且简洁"
+          },
+          {
+            "id": 2,
+            "rule": "必须包含一个代码示例"
+          }
+        ],
+        "executorOutput": "快速排序的Python实现：\n```python\ndef quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[0]\n    left = [x for x in arr[1:] if x <= pivot]\n    right = [x for x in arr[1:] if x > pivot]\n    return quicksort(left) + [pivot] + quicksort(right)\n```..."
+      },
+      "startedAt": "2026-06-06T12:49:08.844Z",
+      "durationMs": 6446,
+      "output": {
+        "passed": true,
+        "reason": "回答直接给出快速排序实现，代码示例满足两项标准"
+      },
+      "success": true
+    }
+  ]
+}
